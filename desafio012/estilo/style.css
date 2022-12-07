@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{/*Aqui entra as configurações gerais para toda a página, o código abaixo junta todas as caixas.*/
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    min-height: 100vh;/*O tamanho mínimo do corpo do meu site vai ser de 100 % ou 100vh eu posso usar tanto o % quanto o vh.*/
+    background-color: darkgrey;
+}/*Observação: vh é a altura, vw é a largura.*/
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    text-transform: uppercase;/*Transforma tudo em maiúscula*/
+    font-variant: small-caps;/*Faz com que as letras continue maiusculas, mas as do meio ficam menores.*/
+}
+
+header > p{
+    
+}
