@@ -23,5 +23,42 @@ header > h1{
 }
 
 header > p{
-    
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;/*Separei as minha section em 10vh de altura.*/
+    padding-bottom: 10vh;/*Separei as minha section em 10vh de altura.*/
+    line-height: 2em;/*Coloquei o espaço entre as frases do meu texto.*/
+    padding-left: 30px;/*Separei o meu texto em 30px da borda esquerda.*/
+} 
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgba(61, 59, 59, 0.623);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 400px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
