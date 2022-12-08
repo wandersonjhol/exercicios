@@ -31,7 +31,7 @@ header > h1{
     padding-top: 50px;
     font-variant: small-caps;/*Faz com que as letras continue maiusculas, mas as do meio ficam menores.*/
     font-family: var(--fonte2);
-    font-size: 8vw;/*Vai diminuir em dez por cento de acordo com a tela, referente a largura(weight).*/
+    font-size: 9vw;/*Vai diminuir em dez por cento de acordo com a tela, referente a largura(weight).*/
 }
 
 header > p{
@@ -56,6 +56,9 @@ section{
     font-size: 3.5vw;/*Vai diminuir em 5 por cento de acordo com a tela, referente a largura(weight).*/
 } 
 
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -63,11 +66,25 @@ section.normal{
 section.imagem{
     background-color: rgba(61, 59, 59, 0.623);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);/*Fiz uma sombra interna. O inset faz com que a sombra fique para dentro.*/
+    background-size: cover;
+    background-attachment: fixed;/*Trava as imagens e tudo na página rola por cima delas. Esse é o efeito Parallax.*/
 }
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.24);
     display: inline-block;/*Transforma-se em uma caixa que se adapita ao tamanho do meu conteúdo(o texto ou imagem).*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514);
+    
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer{
